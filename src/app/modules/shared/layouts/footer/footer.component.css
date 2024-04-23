@@ -1,0 +1,40 @@
+
+/* footer */
+
+footer{
+  background-color: #f1f5f4;
+}
+
+footer .title-text{
+  font-size: 1.2em;
+  color: #2c3e50;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+  font-style: normal;
+  padding-top: 10px;
+}
+
+footer .desc,
+footer ul li{
+  font-size: 1em;
+  color: #676867f2;
+  padding-top: 10px;
+}
+
+footer ul li:hover{
+  color: #7a9d91;
+}
+
+footer input[type='email']{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #7a9d91;
+  margin-top: 10px;
+  margin-top:25px;
+}
+
+footer .copyright{
+  font-size: 1em;
+  color: #676867f2;
+}

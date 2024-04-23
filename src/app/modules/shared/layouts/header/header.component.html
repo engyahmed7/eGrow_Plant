@@ -1,0 +1,119 @@
+<nav class="navbar navbar-expand-sm navbar-dark text-dark fixed-top">
+  <div class="container">
+    <a routerLink="/" class="navbar-brand text-dark" >
+      <img src="assets/images/logo-regular.png" class="me-3" alt="Logo eGrow plants">
+    </a>
+    <button
+      class="navbar-toggler d-lg-none"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    ></button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav me-auto mt-2 mt-lg-0 text-dark">
+        <li class="nav-item">
+          <a class="nav-link active text-dark" routerLink="/product" routerLinkActive="activeClass"  aria-current="page"
+            >Shop All <span class="visually-hidden">(current)</span></a
+          >
+        </li>
+
+        <li class="nav-item" *ngIf="user_role =='Buyer'" >
+          <a class="nav-link active text-dark" routerLink="/seller-dashboard" routerLinkActive="activeClass"  aria-current="page"
+            >Order </a
+          >
+        </li>
+        <li class="nav-item" *ngIf="user_role =='admin'" >
+          <a class="nav-link active text-dark" routerLink="/buyer-dashboard" routerLinkActive="activeClass"  aria-current="page"
+            >All Orders </a>
+        </li>
+
+        <!-- <li class="nav-item dropdown">
+          <a
+            class="nav-link text-dark dropdown-toggle"
+            href="#"
+            id="dropdownId"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Product</a
+          >
+          <div class="dropdown-menu text-dark" aria-labelledby="dropdownId">
+            <a class="dropdown-item text-dark" routerLink="/admin/products">All Product</a>
+            <a class="dropdown-item text-dark" routerLink="/seller/product">Product S</a>
+          </div>
+        </li> -->
+
+        <li class="nav-item" *ngIf="user_role =='Seller'" >
+          <a class="nav-link active text-dark" routerLink="/seller/product" routerLinkActive="activeClass"  aria-current="page">
+            Product
+          </a>
+        </li>
+        <li class="nav-item" *ngIf="user_role =='admin'" >
+          <a class="nav-link active text-dark" routerLink="/seller/product" routerLinkActive="activeClass"  aria-current="page">
+            All Product
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-dark" routerLinkActive="activeClass"  routerLink="/about-us">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" routerLink="/contact-us" routerLinkActive="activeClass"  >Contact us</a>
+        </li>
+
+      </ul>
+      <div class="d-flex my-2 my-lg-0">
+
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0 text-dark">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link text-dark dropdown-toggle"
+              href="#"
+              id="dropdownId"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Languages</a
+            >
+            <div class="dropdown-menu text-dark" aria-labelledby="dropdownId">
+              <a class="dropdown-item text-dark" href="#">English</a>
+              <a class="dropdown-item text-dark" href="#">Arabic</a>
+            </div>
+          </li>
+        </ul>
+
+        <form class="d-flex my-2 my-lg-0">
+          <input
+            class="form-control me-sm-2"
+            type="text"
+            placeholder="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+        <a routerLink="/profile" class="nav-link ms-3" *ngIf="user_role =='user'">
+          <img src="assets/images/user.png" alt="profile" class="profile-img">
+        </a>
+        <a routerLink="/admin/user" class="nav-link ms-3" *ngIf="user_role =='admin'" >
+            <img src="assets/images/user.png" alt="profile" class="profile-img">
+        </a>
+
+      <!-- signin -->
+      <a routerLink="/sign-in" class="btn btn-outline-success my-2 my-sm-0" *ngIf="!logged_in" >
+        Sign In
+      </a>
+      <!-- logout -->
+      <a routerLink="/sign-in" class="btn btn-outline-success my-2 my-sm-0" *ngIf="logged_in" (click)="logout()">
+        logout
+      </a>
+      </div>
+
+
+    </div>
+  </div>
+</nav>
+

@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* #f1f5f4 */
+
+.btn {
+  background-color: #7a9d91;
+  color: #f1f5f4;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}

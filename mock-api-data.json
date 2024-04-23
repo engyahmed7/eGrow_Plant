@@ -1,0 +1,155 @@
+{
+  "user": [
+    {
+      "name": "Engy",
+      "mobNumber": "01114621092",
+      "age": 23,
+      "email": "engya306@gmail.com",
+      "password": "12345",
+      "address": {
+        "addressLine1": "El-Mahata",
+        "addressLine2": "El-Mahataw22",
+        "city": "Cairo",
+        "state": "Cairo",
+        "zipCode": "12345"
+      },
+      "language": [
+        "English",
+        "Arabic"
+      ],
+      "gender": "Female",
+      "aboutYou": "Open Source Application Developer",
+      "uploadImage": "https://avatars.githubusercontent.com/u/472311?size=400",
+      "agreetc": true,
+      "role": "admin",
+      "id": "1"
+    },
+    {
+      "id": "f0db",
+      "aboutYou": "aa",
+      "age": 23,
+      "agreetc": true,
+      "email": "engya306@gmail.com",
+      "gender": "Female",
+      "address": {
+        "id": 0,
+        "addressLine1": "aa",
+        "addressLine2": "aa",
+        "city": "aa",
+        "state": "Alexandria",
+        "zipCode": "21524"
+      },
+      "language": "English",
+      "mobNumber": "01114621092",
+      "name": "engyy",
+      "password": "1234",
+      "uploadImage": "C:\\fakepath\\TaskDay2.png",
+      "role": "Seller"
+    },
+    {
+      "id": "ba4a",
+      "aboutYou": "asdfg",
+      "age": 22,
+      "agreetc": true,
+      "email": "en@gmail.com",
+      "gender": "Female",
+      "address": {
+        "id": 0,
+        "addressLine1": "aa",
+        "addressLine2": "aa",
+        "city": "aa",
+        "state": "Monufia",
+        "zipCode": "aa"
+      },
+      "language": "English",
+      "mobNumber": "01114621092",
+      "name": "Ahmed",
+      "password": "1234",
+      "uploadImage": "C:\\fakepath\\download resized.png",
+      "role": "Buyer"
+    },
+    {
+      "id": "289c",
+      "aboutYou": "aaa",
+      "age": 25,
+      "agreetc": true,
+      "email": "engya306@gmail.com",
+      "gender": "Female",
+      "address": {
+        "id": 0,
+        "addressLine1": "fsdddddddd",
+        "addressLine2": "fsdddddddd",
+        "city": "Alexandria",
+        "state": "Qalyubia",
+        "zipCode": "21524"
+      },
+      "language": "English",
+      "mobNumber": "01114621092",
+      "name": "engyy",
+      "password": "1234",
+      "uploadImage": "C:\\fakepath\\Mystic Woods.jpg",
+      "role": "Buyer"
+    },
+    {
+      "id": "6ad5",
+      "aboutYou": "aaaaaa",
+      "age": 23,
+      "agreetc": true,
+      "email": "ahmedd@gmail.com",
+      "gender": "Female",
+      "address": {
+        "id": 0,
+        "addressLine1": "fsdddddddd",
+        "addressLine2": "fsdddddddd",
+        "city": "Alexandria",
+        "state": "Minya",
+        "zipCode": "21524"
+      },
+      "language": "Arabic",
+      "mobNumber": "01114621092",
+      "name": "Ahmed",
+      "password": "1234",
+      "uploadImage": "C:\\fakepath\\Mystic Woods.jpg",
+      "role": "Buyer"
+    }
+  ],
+  "product": [
+    {
+      "name": "Aloe Vera",
+      "price": 50,
+      "description": "Aloe Vera is a succulent plant species of the genus Aloe. An evergreen perennial, it originates from the Arabian Peninsula, but grows wild in tropical, semi-tropical, and arid climates around the world.",
+      "image": "assets/images/product1.jpg",
+      "category": "plants",
+      "id": "1"
+    }
+  ],
+  "order": [
+    {
+      "id": "1",
+      "userId": 3,
+      "sellerId": 2,
+      "product": {
+        "id": 1,
+        "name": "Aloe Vera",
+        "price": 50,
+        "description": "Aloe Vera is a succulent plant species of the genus Aloe. An evergreen perennial, it originates from the Arabian Peninsula, but grows wild in tropical, semi-tropical, and arid climates around the world.",
+        "image": "assets/images/product1.jpg",
+        "category": "plants"
+      },
+      "quantity": 2,
+      "total": 100,
+      "status": "pending",
+      "date": "2021-09-01",
+      "deliveryAddress": {
+        "addressLine1": "El-Mahata",
+        "addressLine2": "El-Mahataw22",
+        "city": "Cairo",
+        "state": "Cairo",
+        "zipCode": "12345"
+      },
+      "paymentMethod": "cash",
+      "dateTime": "2024-09-01",
+      "contact": "01114621092"
+    }
+  ]
+}
